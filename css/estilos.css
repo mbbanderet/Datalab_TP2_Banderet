@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&family=Sintony:wght@700&display=swap');
+
+body{
+    background-image: url(../imagenes/img\ fondo-03.png);
+    background-size: 200px;
+    background-repeat: repeat;
+    background-color: #f4f1e990
+}
+a {
+    color: #549181;
+    width: 100px;
+    height: 30px;
+}
+img{
+    height: 380px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+    transition-property: all;
+    transition-duration: 200ms;
+}
+img:hover{
+    transform: scale(1.05);
+    border: 4px dotted #549181;
+    border-radius: 25px;
+}
+video {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+main {
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    color: #549181;
+    font-family: "Sintony";
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+footer{
+    margin-top: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    color: #F4F1E9;
+    background-color: #56565656;
+    font-family: "Sintony";
+    text-align: center;
+}
+#contacto{
+    font-size: 15px;
+    font-family: "Rubik";
+    font-weight: 300;
+}
+.subtitulos {
+    color: #565656;
+    font-family: "Rubik";
+    font-weight: 300;
+    text-align: center;
+}
+.botones {
+    text-decoration: none;
+    color: #F4F1E9;
+
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 200%;
+
+    display: inline-block;
+    margin: auto;
+
+    transition-property: all;
+    transition-duration: 500ms;
+}
+#instagram {
+    background-color: #549181
+}
+#behance {
+    background-color: #565656
+}
+.botones:hover {
+    color: #000000;
+    transform: scale(1.12);
+    border-radius: 15px;
+}
+header div {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(../imagenes/stepss-02.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+    animation-name: miVector;
+    animation-duration: 900ms;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes miVector {
+    0% {background-position: 0px 0px;}
+    100% {background-position: 0px -200px;}
+}
+footer div{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(../imagenes/stepfinal-02.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+    animation: final 800ms alternate steps(3) infinite;
+}
+@keyframes final {
+    0% {background-position: 0px 0px;}
+    50% {background-position: 0px -30px;}
+    100% {background-position: 0px -300px;}
+}
+
+
+
